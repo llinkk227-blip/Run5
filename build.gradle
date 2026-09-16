@@ -1,3 +1,19 @@
-plugins {
-    id 'com.android.application' version '8.7.3' apply false
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.example.runintervals'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.example.runintervals'
+        minSdk 23
+        targetSdk 35
+        versionCode 2
+        versionName '2.0'
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core:1.15.0'
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+    implementation 'org.osmdroid:osmdroid-android:6.1.20'
 }
